@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="brand">
+            <div class="brand-icon">A</div>
+            <div class="brand-name">Appointment</div>
+        </div>
+
+        <div class="status">
+            <span></span>
+            Available
+        </div>
+    </header>
+
+    <main class="page">
+
+        <section class="hero">
+            <div>
+                <span class="eyebrow">APPOINTMENT</span>
+                <h1>Book your<br><strong>appointment.</strong></h1>
+            </div>
+        </section>
+
+        <section class="content">
+
+            <div class="booking-card">
+
+                <div class="card-header">
+                    <div>
+                        <span class="section-label">BOOK NOW</span>
+                        <h2>Your details</h2>
+                    </div>
+
+                    <span class="step">01</span>
+                </div>
+
+                <form id="bookingForm">
+
+                    <div class="form-grid">
+
+                        <div class="field">
+                            <label for="name">Full name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Your name"
+                                required
+                            >
+                        </div>
+
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="you@example.com"
+                                required
+                            >
+                        </div>
+
+                        <div class="field">
+                            <label for="phone">Phone</label>
+                            <input
+                                type="text"
+                                id="phone"
+                                placeholder="Phone number"
+                                required
+                            >
+                        </div>
+
+                        <div class="field">
+                            <label for="appointmentDate">Date</label>
+                            <input
+                                type="date"
+                                id="appointmentDate"
+                                required
+                            >
+                        </div>
+
+                        <div class="field full">
+                            <label for="appointmentTime">Time</label>
+                            <input
+                                type="time"
+                                id="appointmentTime"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+                    <button type="submit">
+                        Confirm Appointment
+                        <span>→</span>
+                    </button>
+
+                </form>
+
+            </div>
+
+            <div class="users-section">
+
+                <div class="users-header">
+                    <div>
+                        <span class="section-label">USERS</span>
+                        <h2>Appointments</h2>
+                    </div>
+
+                    <div class="live-indicator">
+                        <span></span>
+                        Live
+                    </div>
+                </div>
+
+                <div id="usersList"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <span>Appointment Booking</span>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
